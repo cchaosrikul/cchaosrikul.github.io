@@ -53,11 +53,48 @@ nav {
 
 /* Header */
 header {
-    height: 800px;
-    background-color: #333333;
+    height: 720px;
+    padding: 0 144px;
 
     .container {
         height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .summary-info {
+            padding: 0 48px;
+
+            h1 {
+                font-size: 40px;
+                margin: 16px 0;
+            }   
+
+            p {
+                font-size: 24px;
+            }
+
+            .resume-bar {
+                display: flex;
+                margin: 24px 0;
+
+                li {
+                    margin-right: 56px;
+                    list-style: none;
+
+                    a {
+                        font-size: 24px;
+                        text-decoration: none;
+                        color: var(--black);
+                    }
+                }
+            }
+        }
+
+        img {
+            max-width: 280px;
+            border-radius: 50%;
+        }
 
     }   
 }
