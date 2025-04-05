@@ -3,6 +3,7 @@
 :root {
     --black: #333333;
     --white: #ffffff;
+    --light-grey: #aaaaaa;
 }
 
 * {
@@ -52,6 +53,7 @@ nav {
 }
 
 /* Header */
+
 header {
     height: 720px;
     padding: 0 144px;
@@ -72,6 +74,10 @@ header {
 
             p {
                 font-size: 24px;
+
+                .position {
+                    color: var(--light-grey);
+                }
             }
 
             .resume-bar {
@@ -79,14 +85,27 @@ header {
                 margin: 24px 0;
 
                 li {
-                    margin-right: 56px;
+                    margin-right: 40px;
+                    width: 100%;
+                    max-width: 192px;
+                    height: 48px;
                     list-style: none;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 24px;
+                    border: 1px solid;
 
                     a {
                         font-size: 24px;
                         text-decoration: none;
                         color: var(--black);
                     }
+
+                    a:hover {
+                        color: var(--light-grey);
+                    }
+
                 }
             }
         }
