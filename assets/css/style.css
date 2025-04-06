@@ -72,7 +72,6 @@ nav {
     .container {
       flex-direction: column;
       align-items: start;
-      margin-top: 3rem;
       height: auto;
 
       .menu.show {
@@ -88,7 +87,6 @@ nav {
           margin-top: 2rem;
         }
       }
-      margin-bottom: 3rem;
     }
   }
 }
@@ -110,6 +108,10 @@ header {
       h1 {
         font-size: 40px;
         margin: 16px 0;
+
+        .firstname {
+            color: var(--light-grey);
+          }
       }
 
       p {
@@ -154,4 +156,29 @@ header {
       border-radius: 50%;
     }
   }
+
+    /* Below 768px screen width */
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 0 2rem;
+
+        .container {
+            height: auto;
+            flex-direction: column;
+            row-gap: 0.5rem;
+
+            .summary-info {
+                padding: 0;
+            }
+
+            .resume-bar {
+                flex-direction: column;
+                row-gap: 1rem;
+                
+                li {
+                    
+                }
+            }
+        }
+    }
 }
