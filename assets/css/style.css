@@ -196,3 +196,112 @@ header {
         }
     }
 }
+
+/* Projects */
+.projects {
+    height: 800px;
+    padding: 0 144px;
+
+    .container {
+        height: 100%;
+
+        .project-title {
+            
+            h2 {
+                padding: 104px 0;
+                text-align: center;
+                font-size: clamp(1rem, 10vw, 1.5rem);
+            }
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));;
+            gap: 3rem;
+ 
+            .project-grid-item {
+                display: flex;
+                align-items: center;
+                
+                img {
+                    max-width: 512px;
+                }
+
+                .project-info {
+                    padding: 0 72px;
+
+                    h3 {
+
+                    }
+
+                    p {
+                        padding: 24px 0;
+                    }
+
+                    .tech-stack {
+                        display: flex;
+                        flex-wrap: wrap;
+                        row-gap: 1rem;
+                        
+                        li {
+                            margin-right: 16px;
+                            width: 100%;
+                            max-width: 72px;
+                            height: 36px;
+                            list-style: none;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 24px;
+                            border: 1px solid;
+    
+                            a {
+                                font-size: clamp(0.5rem, 10vw, 1rem);
+                                text-decoration: none;
+                                color: var(--black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Below 768px screen width */
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 0 2rem;
+
+        .container {
+            height: auto;
+
+            .project-title {
+                h2 {
+                    padding: 78px 0;
+                }
+            }
+
+            .project-grid {
+                height: auto;
+
+                .project-grid-item {
+                    flex-direction: column;
+
+                    img {
+                        width: 75%;
+                    }
+
+                    .project-info {
+                        h3 {
+                            padding-top: 24px; 
+                         }
+     
+                         p {
+                             padding: 24px 0;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}
