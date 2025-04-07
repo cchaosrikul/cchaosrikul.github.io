@@ -199,7 +199,7 @@ header {
 
 /* Projects */
 .projects {
-    height: 800px;
+    height: auto;
     padding: 0 144px;
 
     .container {
@@ -303,5 +303,28 @@ header {
                 }
             }
         }
+    }
+}
+
+/* About */
+.about {
+    height: 576px;
+    padding: 104px 144px;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+        
+        }
+
+        p {
+            padding: 24px 0;
+        }
+        
     }
 }
