@@ -267,8 +267,8 @@ header {
         }
     }
 
-    /* Below 768px screen width */
-    @media screen and (max-width: 768px) {
+    /* Below 950px screen width */
+    @media screen and (max-width: 950px) {
         height: auto;
         padding: 0 2rem;
 
@@ -324,7 +324,12 @@ header {
 
         p {
             padding: 24px 0;
-        }
-        
+        } 
     }
+
+     /* Below 768px screen width */
+     @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 78px 2rem;
+     }
 }
