@@ -336,5 +336,40 @@ header {
 
 /* Footer */
 footer {
-    
+    height: 400px;
+    padding: 52px 144px;
+
+    .container {
+        height: 100%;
+
+        h2 {
+            padding: 36px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+
+            .social-media{
+                width: 33.33%;
+
+                h3 {
+
+                }
+
+                .social-media-links {
+                    padding: 8px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 3rem;
+
+                }
+            } 
+
+            p {
+                width: 66.66%;
+            }
+        }
+    }
 }
