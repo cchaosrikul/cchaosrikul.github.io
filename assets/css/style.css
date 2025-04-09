@@ -292,6 +292,7 @@ header {
                                 font-size: clamp(1rem, 10vw, var(--body-text));
                                 text-decoration: none;
                                 color: var(--black);
+                                cursor: auto;
                             }
                         }
                     }
