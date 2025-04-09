@@ -3,7 +3,7 @@
 :root {
   --black: #333333;
   --white: #ffffff;
-  --light-grey: #aaaaaa;
+  --light-grey: #dadada;
 
   --h1: 2.5rem; /* 40px */
   --h2: 2rem; /* 32px */
@@ -36,8 +36,13 @@
 
 /* Navbar */
 nav {
-  height: 72px;
+  height: 56px;
   padding: 0 144px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--light-grey);
 
   .container {
     height: 100%;
@@ -48,7 +53,7 @@ nav {
 
     .logo {
       color: var(--black);
-      font-size: clamp(1rem, 10vw, var(--h3));
+      font-size: clamp(1rem, 10vw, var(--body-text));
 
       a {
         text-decoration: none;
@@ -123,7 +128,7 @@ nav {
 
 /* Header */
 header {
-  height: 488px;
+  height: 560px;
   padding: 0 144px;
 
   .container {
@@ -267,7 +272,7 @@ header {
                     }
 
                     p {
-                        padding: 24px 0;
+                        padding: 12px 0;
                         font-size: clamp(1rem, 10vw, var(--body-text));
                     }
 
@@ -357,7 +362,7 @@ header {
         }
 
         p {
-            padding: 24px 0;
+            padding: 12px 0;
             font-size: clamp(1rem, 10vw, var(--body-text));
         } 
     }
