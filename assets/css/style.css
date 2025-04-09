@@ -341,7 +341,7 @@ header {
 
 /* About */
 .about {
-    height: 576px;
+    height: 560px;
     padding: 104px 144px;
 
     .container {
@@ -352,11 +352,12 @@ header {
         text-align: center;
 
         h2 {
-        
+          font-size: clamp(1rem, 10vw, var(--h2));
         }
 
         p {
             padding: 24px 0;
+            font-size: clamp(1rem, 10vw, var(--body-text));
         } 
     }
 
