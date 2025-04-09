@@ -49,6 +49,10 @@ nav {
     .logo {
       color: var(--black);
       font-size: clamp(1rem, 10vw, var(--h3));
+
+      a {
+        text-decoration: none;
+      }
     }
 
     .menu {
