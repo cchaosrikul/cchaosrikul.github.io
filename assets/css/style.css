@@ -53,19 +53,35 @@ nav {
       a {
         text-decoration: none;
       }
+
+      a:visited {
+        color: var(--black);
+      }
+
+      a:hover {
+        color: var(--light-grey);
+      }
     }
 
     .menu {
       display: flex;
+      color: var(--black);
 
       li {
         margin-left: 56px;
         list-style: none;
 
         a {
-          color: var(--black);
           text-decoration: none;
           font-size: clamp(0.5rem, 10vw, var(--body-text));
+        }
+
+        a:visited {
+          color: var(--black);
+        }
+  
+        a:hover {
+          color: var(--light-grey);
         }
       }
     }
