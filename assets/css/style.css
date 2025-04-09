@@ -4,6 +4,15 @@
   --black: #333333;
   --white: #ffffff;
   --light-grey: #aaaaaa;
+
+  --h1: 2.5rem; /* 40px */
+  --h2: 2rem; /* 32px */
+  --h3: 1.75rem; /* 28px */
+  --h4: 1.5rem; /* 24px */
+  --h5: 1.25rem;/* 20px */
+  --h6: 1rem;/* 16px */
+  --body-text: 1rem; /* 16px */
+
 }
 
 * {
@@ -22,12 +31,12 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    font-size: clamp(1rem, 10vw, 1.5rem); /* 1rem = 24px */
+    font-size: clamp(1rem, 10vw, var(--h3)); /* 1rem = 24px */
 }
 
 /* Navbar */
 nav {
-  height: 96px;
+  height: 72px;
   padding: 0 144px;
 
   .container {
@@ -39,7 +48,7 @@ nav {
 
     .logo {
       color: var(--black);
-      font-size: clamp(1rem, 10vw, 1.5rem); /* 1rem = 24px */
+      font-size: clamp(1rem, 10vw, var(--h3));
     }
 
     .menu {
@@ -52,7 +61,7 @@ nav {
         a {
           color: var(--black);
           text-decoration: none;
-          font-size: clamp(0.5rem, 10vw, 1rem);
+          font-size: clamp(0.5rem, 10vw, var(--body-text));
         }
       }
     }
@@ -94,7 +103,8 @@ nav {
 
 /* Header */
 header {
-  height: 576px;
+  background-color: beige;
+  height: 488px;
   padding: 0 144px;
 
   .container {
@@ -107,8 +117,8 @@ header {
       padding: 0 48px;
 
       h1 {
-        font-size: clamp(1rem, 10vw, 2.5rem); /* 2.5rem = 40px */
-        margin: 16px 0;
+        font-size: clamp(1rem, 10vw, var(--h1));
+        margin: 12px 0;
 
         .firstname {
             color: var(--light-grey);
@@ -116,7 +126,7 @@ header {
       }
 
       p {
-        font-size: clamp(1rem, 10vw, 1.5rem); /* 1.5rem = 24px */
+        font-size: clamp(1rem, 10vw, 16px);
 
         .position {
           color: var(--light-grey);
@@ -140,7 +150,7 @@ header {
           border: 1px solid;
 
           a {
-            font-size: clamp(0.5rem, 10vw, 1.25rem); /* 1.5rem = 24px */
+            font-size: clamp(0.5rem, 10vw, var(--h5));
             text-decoration: none;
             color: var(--black);
           }
