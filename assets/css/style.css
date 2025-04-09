@@ -239,15 +239,14 @@ header {
         height: 100%;
 
         .project-title {
-            
-            h2 {
-                padding: 104px 0;
+            h5 {
                 text-align: center;
-                font-size: clamp(1rem, 10vw, 1.5rem);
+                font-size: clamp(1rem, 10vw, var(--h5));
             }
         }
 
         .project-grid {
+            margin-top: 36px;
             display: grid;
             grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));;
             gap: 3rem;
@@ -263,12 +262,13 @@ header {
                 .project-info {
                     padding: 0 72px;
 
-                    h3 {
-
+                    h4 {
+                      font-size: clamp(1rem, 10vw, var(--h4));
                     }
 
                     p {
                         padding: 24px 0;
+                        font-size: clamp(1rem, 10vw, var(--body-text));
                     }
 
                     .tech-stack {
@@ -289,7 +289,7 @@ header {
                             border: 1px solid;
     
                             a {
-                                font-size: clamp(0.5rem, 10vw, 1rem);
+                                font-size: clamp(1rem, 10vw, var(--body-text));
                                 text-decoration: none;
                                 color: var(--black);
                             }
