@@ -168,10 +168,6 @@ header {
       p {
         color: var(--black);
         font-size: clamp(1rem, 10vw, 16px);
-
-        .position {
-          color: var(--black);
-        }
       }
 
       .resume-bar {
@@ -259,13 +255,6 @@ header {
 
     .container {
         height: 100%;
-
-        /* .project-title {
-            h5 {
-                text-align: center;
-                font-size: clamp(1rem, 10vw, var(--h5));
-            }
-        } */
 
         .project-grid {
             margin-top: 36px;
