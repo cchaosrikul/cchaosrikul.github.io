@@ -1,9 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  --black: #333333;
+  /* --black: #111111;
   --white: #ffffff;
-  --light-grey: #dadada;
+  --grey: #707070;
+  --light-grey-2: #DCDCDC;
+  --light-grey: #F5F5F5; */
+
+  /* --black: #1d3557;
+  --grey: #457b9d;
+  --light-grey-2: #71c2c6;
+  --light-grey: #b0e0e6;
+  --white: #f1faee; */
+
+  --black: #5d2e46;
+  --grey: #ad6a6c;
+  --light-grey-2: #d0ada7;
+  --light-grey: #ecd5c7;
+  --white: #e8d6cb;
 
   --h1: 2.5rem; /* 40px */
   --h2: 2rem; /* 32px */
@@ -56,6 +70,7 @@ nav {
       font-size: clamp(1rem, 10vw, var(--body-text));
 
       a {
+        color: var(--black);
         text-decoration: none;
       }
 
@@ -64,13 +79,12 @@ nav {
       }
 
       a:hover {
-        color: var(--light-grey);
+        background-color: var(--light-grey-2);
       }
     }
 
     .menu {
       display: flex;
-      color: var(--black);
 
       li {
         margin-left: 56px;
@@ -79,6 +93,7 @@ nav {
         a {
           text-decoration: none;
           font-size: clamp(0.5rem, 10vw, var(--body-text));
+          color: color: var(--black);
         }
 
         a:visited {
@@ -86,7 +101,7 @@ nav {
         }
   
         a:hover {
-          color: var(--light-grey);
+          background-color: var(--light-grey-2);
         }
       }
     }
@@ -141,19 +156,21 @@ header {
       padding: 0 48px;
 
       h1 {
+        color: var(--black);
         font-size: clamp(1rem, 10vw, var(--h1));
         margin: 12px 0;
 
         .firstname {
-            color: var(--light-grey);
+            color: var(--grey);
           }
       }
 
       p {
+        color: var(--black);
         font-size: clamp(1rem, 10vw, 16px);
 
         .position {
-          color: var(--light-grey);
+          color: var(--black);
         }
       }
 
@@ -185,7 +202,7 @@ header {
 
         li > a:hover {
           color: var(--white);
-          background-color: var(--light-grey);
+          background-color: var(--black);
         }
       }
     }
@@ -243,12 +260,12 @@ header {
     .container {
         height: 100%;
 
-        .project-title {
+        /* .project-title {
             h5 {
                 text-align: center;
                 font-size: clamp(1rem, 10vw, var(--h5));
             }
-        }
+        } */
 
         .project-grid {
             margin-top: 36px;
@@ -268,10 +285,12 @@ header {
                     padding: 0 72px;
 
                     h4 {
+                      color: var(--grey);
                       font-size: clamp(1rem, 10vw, var(--h4));
                     }
 
                     p {
+                        color: var(--black);
                         padding: 12px 0;
                         font-size: clamp(1rem, 10vw, var(--body-text));
                     }
@@ -358,10 +377,12 @@ header {
         text-align: center;
 
         h2 {
+          color: var(--grey);
           font-size: clamp(1rem, 10vw, var(--h2));
         }
 
         p {
+            color: var(--black);
             padding: 12px 0;
             font-size: clamp(1rem, 10vw, var(--body-text));
         } 
