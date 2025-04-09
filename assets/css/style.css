@@ -156,6 +156,7 @@ header {
       .resume-bar {
         display: flex;
         margin: 24px 0;
+        color: var(--black);
 
         li {
           margin-right: 40px;
@@ -172,9 +173,11 @@ header {
           a {
             font-size: clamp(0.5rem, 10vw, var(--h5));
             text-decoration: none;
+          }
+          a:visited {
             color: var(--black);
           }
-
+    
           a:hover {
             color: var(--light-grey);
           }
