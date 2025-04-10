@@ -157,14 +157,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 3rem;
 
     .summary-info {
-      padding: 0 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      row-gap: 1rem;
 
       h1 {
         color: var(--black);
         font-size: clamp(1rem, 10vw, var(--h1));
-        margin: 12px 0;
 
         .firstname {
             color: var(--grey);
@@ -178,16 +182,13 @@ header {
 
       .resume-bar {
         display: flex;
-        margin: 24px 0;
+        justify-content: flex-start;
+        align-items: center;
         list-style: none;
-
-        li {
-          margin-right: 40px;
-        }
+        column-gap: 2.5rem;
      
         li > a {
           padding: 24px 48px;
-          width: 100%;
           height: 48px;
           display: inline-flex;
           justify-content: center;
