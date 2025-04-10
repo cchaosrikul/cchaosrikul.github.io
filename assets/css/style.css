@@ -258,18 +258,16 @@ nav {
 
 /* Projects */
 #projects {
-    height: 560px;
+    height: auto;
     padding: 0 144px;
 
     .container {
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         .project-grid {
             display: grid;
-            grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));;
+            grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+            row-gap: 3rem;
  
             .project-grid-item {
                 display: flex;
