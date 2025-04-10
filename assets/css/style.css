@@ -26,7 +26,6 @@
   --h5: 1.25rem;/* 20px */
   --h6: 1rem;/* 16px */
   --body-text: 1rem; /* 16px */
-
 }
 
 * {
@@ -193,6 +192,7 @@ nav {
         column-gap: 2.5rem;
      
         li > a {
+          color: var(--black);
           padding: 24px 48px;
           height: 48px;
           display: inline-flex;
@@ -314,13 +314,9 @@ nav {
                             align-items: center;
                             border-radius: 24px;
                             border: 1px solid;
-    
-                            a {
-                                font-size: clamp(1rem, 10vw, var(--body-text));
-                                text-decoration: none;
-                                color: var(--black);
-                                cursor: auto;
-                            }
+                            font-size: clamp(1rem, 10vw, var(--body-text));
+                            color: var(--black);
+                            cursor: auto;
                         }
                     }
                 }
@@ -437,6 +433,10 @@ nav {
                     display: flex;
                     column-gap: 2.5rem;
                     justify-content: center;
+
+                    a {
+                      color: var(--grey);
+                    }
 
                     a:visited {
                       color: var(--grey);
