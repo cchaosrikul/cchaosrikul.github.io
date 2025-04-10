@@ -362,13 +362,15 @@ header {
 /* About */
 .about {
     height: 560px;
-    padding: 104px 144px;
+    padding: 0 144px;
 
     .container {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
         text-align: center;
 
         h2 {
@@ -378,7 +380,6 @@ header {
 
         p {
             color: var(--black);
-            padding: 12px 0;
             font-size: clamp(1rem, 10vw, var(--body-text));
         } 
     }
