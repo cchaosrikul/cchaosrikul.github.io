@@ -1,9 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  --black: #333333;
+  /* --black: #111111;
   --white: #ffffff;
-  --light-grey: #aaaaaa;
+  --grey: #707070;
+  --light-grey-2: #DCDCDC;
+  --light-grey: #F5F5F5; */
+
+  /* --black: #1d3557;
+  --grey: #457b9d;
+  --light-grey-2: #71c2c6;
+  --light-grey: #b0e0e6;
+  --white: #f1faee; */
+
+  --black: #412031;
+  --grey: #ad6a6c;
+  --light-grey-2: #d0ada7;
+  --light-grey: #f9f1ec;
+  --white: #ffffff;
+
+  --h1: 2.5rem; /* 40px */
+  --h2: 2rem; /* 32px */
+  --h3: 1.75rem; /* 28px */
+  --h4: 1.5rem; /* 24px */
+  --h5: 1.25rem;/* 20px */
+  --h6: 1rem;/* 16px */
+  --body-text: 1rem; /* 16px */
+
 }
 
 * {
@@ -22,13 +45,18 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    font-size: clamp(1rem, 10vw, 1.5rem); /* 1rem = 24px */
+    font-size: clamp(1rem, 10vw, var(--h3)); /* 1rem = 24px */
 }
 
 /* Navbar */
 nav {
-  height: 96px;
+  height: 56px;
   padding: 0 144px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--light-grey);
 
   .container {
     height: 100%;
@@ -39,7 +67,20 @@ nav {
 
     .logo {
       color: var(--black);
-      font-size: clamp(1rem, 10vw, 1.5rem); /* 1rem = 24px */
+      font-size: clamp(1rem, 10vw, var(--body-text));
+
+      a {
+        color: var(--black);
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: var(--black);
+      }
+
+      a:hover {
+        background-color: var(--light-grey-2);
+      }
     }
 
     .menu {
@@ -50,9 +91,17 @@ nav {
         list-style: none;
 
         a {
-          color: var(--black);
           text-decoration: none;
-          font-size: clamp(0.5rem, 10vw, 1rem);
+          font-size: clamp(0.5rem, 10vw, var(--body-text));
+          color: color: var(--black);
+        }
+
+        a:visited {
+          color: var(--black);
+        }
+  
+        a:hover {
+          background-color: var(--light-grey-2);
         }
       }
     }
@@ -94,7 +143,7 @@ nav {
 
 /* Header */
 header {
-  height: 576px;
+  height: 560px;
   padding: 0 144px;
 
   .container {
@@ -107,47 +156,49 @@ header {
       padding: 0 48px;
 
       h1 {
-        font-size: clamp(1rem, 10vw, 2.5rem); /* 2.5rem = 40px */
-        margin: 16px 0;
+        color: var(--black);
+        font-size: clamp(1rem, 10vw, var(--h1));
+        margin: 12px 0;
 
         .firstname {
-            color: var(--light-grey);
+            color: var(--grey);
           }
       }
 
       p {
-        font-size: clamp(1rem, 10vw, 1.5rem); /* 1.5rem = 24px */
-
-        .position {
-          color: var(--light-grey);
-        }
+        color: var(--black);
+        font-size: clamp(1rem, 10vw, 16px);
       }
 
       .resume-bar {
         display: flex;
         margin: 24px 0;
+        list-style: none;
 
         li {
           margin-right: 40px;
+        }
+     
+        li > a {
+          padding: 24px 48px;
           width: 100%;
-          max-width: 192px;
           height: 48px;
-          list-style: none;
           display: inline-flex;
           justify-content: center;
           align-items: center;
           border-radius: 24px;
           border: 1px solid;
+          font-size: clamp(0.5rem, 10vw, var(--h5));
+          text-decoration: none;         
+        }
 
-          a {
-            font-size: clamp(0.5rem, 10vw, 1.25rem); /* 1.5rem = 24px */
-            text-decoration: none;
-            color: var(--black);
-          }
+        li > a:visited {
+          color: var(--black);
+        }
 
-          a:hover {
-            color: var(--light-grey);
-          }
+        li > a:hover {
+          color: var(--white);
+          background-color: var(--black);
         }
       }
     }
@@ -205,16 +256,8 @@ header {
     .container {
         height: 100%;
 
-        .project-title {
-            
-            h2 {
-                padding: 104px 0;
-                text-align: center;
-                font-size: clamp(1rem, 10vw, 1.5rem);
-            }
-        }
-
         .project-grid {
+            margin-top: 36px;
             display: grid;
             grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));;
             gap: 3rem;
@@ -230,12 +273,15 @@ header {
                 .project-info {
                     padding: 0 72px;
 
-                    h3 {
-
+                    h4 {
+                      color: var(--grey);
+                      font-size: clamp(1rem, 10vw, var(--h4));
                     }
 
                     p {
-                        padding: 24px 0;
+                        color: var(--black);
+                        padding: 12px 0;
+                        font-size: clamp(1rem, 10vw, var(--body-text));
                     }
 
                     .tech-stack {
@@ -256,9 +302,10 @@ header {
                             border: 1px solid;
     
                             a {
-                                font-size: clamp(0.5rem, 10vw, 1rem);
+                                font-size: clamp(1rem, 10vw, var(--body-text));
                                 text-decoration: none;
                                 color: var(--black);
+                                cursor: auto;
                             }
                         }
                     }
@@ -308,7 +355,7 @@ header {
 
 /* About */
 .about {
-    height: 576px;
+    height: 560px;
     padding: 104px 144px;
 
     .container {
@@ -319,11 +366,14 @@ header {
         text-align: center;
 
         h2 {
-        
+          color: var(--grey);
+          font-size: clamp(1rem, 10vw, var(--h2));
         }
 
         p {
-            padding: 24px 0;
+            color: var(--black);
+            padding: 12px 0;
+            font-size: clamp(1rem, 10vw, var(--body-text));
         } 
     }
 
