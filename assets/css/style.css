@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  /* --black: #111111;
-  --white: #ffffff;
+  --black: #111111;
+  /*--white: #ffffff;
   --grey: #707070;
   --light-grey-2: #DCDCDC;
   --light-grey: #F5F5F5; */
@@ -13,7 +13,7 @@
   --light-grey: #b0e0e6;
   --white: #f1faee; */
 
-  --black: #412031;
+  /* --black: #412031; */
   --grey: #ad6a6c;
   --light-grey-2: #d0ada7;
   --light-grey: #f9f1ec;
@@ -34,6 +34,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+html {
+  background-color: var(--light-grey);
 }
 
 .container {
@@ -68,6 +73,7 @@ nav {
     .logo {
       color: var(--black);
       font-size: clamp(1rem, 10vw, var(--body-text));
+      
 
       a {
         color: var(--black);
@@ -386,41 +392,60 @@ header {
 
 /* Footer */
 footer {
-    height: 400px;
-    padding: 52px 144px;
+    background-color: var(--light-grey-2);
+    height: 350px;
+    padding: 0 144px;
 
     .container {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
 
         h2 {
-            padding: 36px 0;
             text-align: center;
+            font-size: clamp(1rem, 10vw, var(--h2));
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
+            align-items: center;
+            column-gap: 1.5rem;
 
             .social-media{
                 width: 33.33%;
 
-                h3 {
+                h5 {
+                    font-size: clamp(1rem, 10vw, var(--h5));
                     text-align: center;
                 }
 
                 .social-media-links {
-                    padding: 8px 0;
+                    margin-top: 0.5rem;
                     display: flex;
-                    column-gap: 3rem;
+                    column-gap: 2.5rem;
                     justify-content: center;
+
+                    a:visited {
+                      color: var(--grey);
+                    }
+
+                    a:hover {
+                      color: var(--light-grey);
+                    }
                 }
             } 
 
             p {
                 width: 66.66%;
+                font-size: clamp(1rem, 10vw, var(--body-text));
             }
         }
     }
+    
      /* Below 768px screen width */
     @media screen and (max-width: 768px) {
         height: auto;
