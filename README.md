@@ -1,2 +1,2 @@
-# personal-website
-My simple personal website using HTML, CSS, and JS
+# Simple Portfolio Website
+HTML, CSS, and JS powered
