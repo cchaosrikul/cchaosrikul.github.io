@@ -39,6 +39,7 @@
 
 html {
   background-color: var(--light-grey);
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -50,10 +51,10 @@ html {
     cursor: pointer;
     position: absolute;
     right: 0;
-    font-size: clamp(1rem, 10vw, var(--h3)); /* 1rem = 24px */
+    font-size: clamp(1rem, 10vw, var(--h3));
 }
 
-/* Navbar */
+/* Nav */
 nav {
   height: 56px;
   padding: 0 144px;
@@ -73,7 +74,6 @@ nav {
     .logo {
       color: var(--black);
       font-size: clamp(1rem, 10vw, var(--body-text));
-      
 
       a {
         color: var(--black);
@@ -99,8 +99,13 @@ nav {
         a {
           text-decoration: none;
           font-size: clamp(0.5rem, 10vw, var(--body-text));
-          color: color: var(--black);
+          color: var(--black);
         }
+
+        a.highlight {
+          background-color: var(--light-grey-2);
+        }
+
 
         a:visited {
           color: var(--black);
@@ -148,7 +153,7 @@ nav {
 }
 
 /* Header */
-header {
+#header {
   height: 560px;
   padding: 0 144px;
 
@@ -246,17 +251,13 @@ header {
             .resume-bar {
                 flex-direction: column;
                 row-gap: 1rem;
-                
-                li {
-                    
-                }
             }
         }
     }
 }
 
 /* Projects */
-.projects {
+#projects {
     height: 560px;
     padding: 0 144px;
 
@@ -367,7 +368,7 @@ header {
 }
 
 /* About */
-.about {
+#about {
     height: 560px;
     padding: 0 144px;
 
@@ -399,7 +400,7 @@ header {
 }
 
 /* Footer */
-footer {
+#footer {
     background-color: var(--light-grey-2);
     height: 350px;
     padding: 0 144px;
