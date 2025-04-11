@@ -11,7 +11,7 @@
   --grey: #457b9d;
   --light-grey-2: #71c2c6;
   --light-grey: #b0e0e6;
-  --white: #f1faee; */
+  --white: #f5f5f5; */
 
   /* --black: #412031; */
   --grey: #ad6a6c;
@@ -37,7 +37,7 @@
 }
 
 html {
-  background-color: var(--light-grey);
+  background-color: var(--white);
   scroll-behavior: smooth;
 }
 
@@ -61,7 +61,7 @@ nav {
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: var(--light-grey);
+  background-color: var(--white);
 
   .container {
     height: 100%;
