@@ -273,11 +273,11 @@ nav {
                 display: flex;
                 align-items: center;
                 column-gap: 3.5rem;
-                
-                img {
-                    max-width: 512px;
-                }
 
+                img {
+                  max-width: 480px;
+                }
+    
                 .project-info {
                     display: flex;
                     flex-direction: column;
@@ -285,9 +285,33 @@ nav {
                     align-items: start;
                     row-gap: 1rem;
 
-                    h4 {
-                      color: var(--grey);
-                      font-size: clamp(1rem, 10vw, var(--h4));
+                    .project-title {
+                      display: inline-flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 1.25rem;
+
+                      h4 {
+                        color: var(--grey);
+                        font-size: clamp(1rem, 10vw, var(--h4));
+                      }
+
+                      span {
+                        display: inline-flex;
+                        gap: 0.75rem;
+                        a {
+                          color: var(--black);
+                          text-decoration: none;
+                        }
+
+                        a:visited {
+                          color: var(--black);
+                        }
+
+                        a:hover {
+                          color: var(--grey);
+                        }
+                      }
                     }
 
                     p {
